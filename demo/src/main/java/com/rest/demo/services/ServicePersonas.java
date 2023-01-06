@@ -22,4 +22,10 @@ public class ServicePersonas {
         }
         return null;
     }
+    public Personas getPorId(Integer id){
+        for(Personas persona : personas){
+            if(persona.getId().equals(id))return persona;
+        }
+        return null;
+    }
 }

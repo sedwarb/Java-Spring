@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "0544d27d-74d6-4551-bccf-6d292b0fb941",
+		"name": "Spring-Java",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Obtener-Personas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{path}}",
+					"host": [
+						"{{path}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener-Persona-byName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{path}}/cipriano",
+					"host": [
+						"{{path}}"
+					],
+					"path": [
+						"cipriano"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener-PersonaById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{path}}/id/14296150",
+					"host": [
+						"{{path}}"
+					],
+					"path": [
+						"id",
+						"14296150"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear-Persona",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Cipriano\",\r\n    \"id\":1920\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{path}}",
+					"host": [
+						"{{path}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

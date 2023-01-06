@@ -34,7 +34,15 @@ public class PersonaController {
         return this.sPersonas.getPorName(nom);
     }
 
+    @GET
+    @Path("/personas/id/{id}")
+    @Produces("application/json")
+    public Personas listarid(@PathParam("id") Integer id){
+        return this.sPersonas.getPorId(id);
+    }
+
     @POST
+    @Path("/personas")
     @Produces("application/json")
     @Consumes("application/json")
     public Response introducirPersona(Personas persona){
